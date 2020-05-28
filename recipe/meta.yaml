@@ -1,5 +1,5 @@
 {% set name = "pytest-session2file" %}
-{% set version = "0.1.9" %}
+{% set version = "0.1.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 68a8c023c370d80e26d5655c0087d2f1d97117a2e519e4da39651762bce413e9
+  sha256: 575a290c6dd28eb71c7fd20373645b3c7ad91769ea66852004632a70a290e11c
   patches:
     - fixes-for-py3.patch
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: LGPL-3.0
   license_family: LGPL
   license_file: LICENSE.txt
-  summary: 'pytest plugin to save failure or test session information to a file'
+  summary: pytest plugin to save failure or test session information to a file
 
 extra:
   recipe-maintainers:
