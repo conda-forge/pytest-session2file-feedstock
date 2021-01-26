@@ -5,11 +5,9 @@ Home: https://github.com/BuhtigithuB/pytest_session2file
 
 Package license: LGPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-session2file-feedstock/blob/master/LICENSE.txt)
 
 Summary: pytest plugin to save failure or test session information to a file
-
-
 
 Current build status
 ====================
