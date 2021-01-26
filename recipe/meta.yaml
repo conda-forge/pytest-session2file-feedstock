@@ -1,5 +1,5 @@
 {% set name = "pytest-session2file" %}
-{% set version = "0.1.10" %}
+{% set version = "0.1.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 575a290c6dd28eb71c7fd20373645b3c7ad91769ea66852004632a70a290e11c
+  sha256: b7bdc19c17acaf3991e6592efc570abf5c6d800905f031ce2570b173ec71309a
 
 build:
   number: 0
